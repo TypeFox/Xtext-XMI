@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: io.typefox.xtextxmi.xtree
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: io.typefox.xtextxmi.xtree; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ io.typefox.xtextxmi.tree;bundle-version="0.1.0",
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.util,
+ org.eclipse.xtend.lib
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: io.typefox.xtextxmi.xtree.parser.antlr.internal,
+ io.typefox.xtextxmi.xtree.scoping,
+ io.typefox.xtextxmi.xtree.generator,
+ io.typefox.xtextxmi.xtree.validation,
+ io.typefox.xtextxmi.xtree,
+ io.typefox.xtextxmi.xtree.services,
+ io.typefox.xtextxmi.xtree.serializer,
+ io.typefox.xtextxmi.xtree.parser.antlr
+Import-Package: org.apache.log4j

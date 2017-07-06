@@ -1,0 +1,12 @@
+grammar io.typefox.xtextxmi.xtree.Xtree with org.eclipse.xtext.common.Terminals
+
+import "http://www.typefox.io/xtextxmi/tree"
+
+Node:
+	name=ID ('('
+		('related' related+=[Node|QualifiedName]*)?		
+		('children' children+=Node*)?
+	')')?;
+	
+QualifiedName:
+	ID ('.' ID)*;
