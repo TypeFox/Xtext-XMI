@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Xtext
+Bundle-SymbolicName: io.typefox.xtextxmi.tree.xtext;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.core.runtime,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ com.google.guava,
+ org.eclipse.xtend.lib,
+ io.typefox.xtextxmi.tree.editor;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: io.typefox.xtextxmi.tree.xtext.ui.Activator
+Import-Package: org.apache.log4j;version="1.2.15"
+
